@@ -6,15 +6,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500&family=Mulish:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@500&family=Mulish:wght@500&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="/fontawesome-free-6.4.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="glightbox/css/glightbox.min.css" />
     <title>Mega Landing Page</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top menu">
+    <!-- //////////////////////////////////////// 
+      Navbar start
+    //////////////////////////////////////////// -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow menu"
+    >
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="images/logo.png" alt="logo image"
@@ -62,16 +69,64 @@
         </div>
       </div>
     </nav>
-    <section id="intro-section" class="intro-section">
-      <div class="left-div">
-        <h1>Hey! This is Patrick.</h1>
-        <p>
-          This is a multi-purpose responsive layour created with Bootstrap 5.
-          (this is a good place for a description)
-        </p>
+    <!--///////////////////////////////
+       Navbar End 
+      /////////////////////-->
+
+    <!-- Intro Section start -->
+    <section id="home" class="intro-section">
+      <div class="container">
+        <div class="row align-items-center text-white">
+          <!-- start the content for the intro -->
+          <div class="col-md-6 intros">
+            <h1 class="display-2">
+              <span class="display-2--intro">Hey! This is Patrick.</span>
+              <span class="display-2--description lh-base">
+                This is a multi-purpose responsive layour created with Bootstrap
+                5. (this is a good place for a description)
+              </span>
+            </h1>
+            <button type="button" class="rounded-pill btn-rounded">
+              Get in touch <span><i class="fas fa-arrow-right"></i></span>
+            </button>
+          </div>
+          <!-- start the content for the video -->
+          <div class="col-md-6 intros text-end">
+            <div class="video-box">
+              <img
+                src="images/arts/intro-section-illustration.png"
+                alt="video illustration"
+                class="img-fluid"
+              />
+              <a
+                href="#"
+                class="glightbox position-absolute top-50 start-50 translate-middle"
+              >
+                <span>
+                  <i class="glightbox fas fa-play-circle"></i>
+                </span>
+                <span
+                  class="border-animation border-animation--border-1"
+                ></span>
+                <span
+                  class="border-animation border-animation--border-2"
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="right-div"></div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,288L40,261.3C80,235,160,181,240,170.7C320,160,400,192,480,192C560,192,640,160,720,133.3C800,107,880,85,960,106.7C1040,128,1120,192,1200,213.3C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
     </section>
+    <!--/////////////////////////////////////////////////////// 
+      Intro Section End 
+    ////////////////////////////////////////////////////-->
     <section id="companies" class="companies">
       <h3>Trusted by companies like about 35% of the big view?</h3>
       <div class="divider-purple">divider</div>
@@ -246,6 +301,18 @@
         </div>
       </div>
     </section>
+
+    <script src="glightbox/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = GLightbox({
+        touchNavigation: true,
+        href: "https://www.youtube.com/watch?v=xVWeRnStdSA",
+        type: "video",
+        source: "youtube", //vimeo, youtube or local
+        width: 900,
+        autoPlayVideos: "true",
+      });
+    </script>
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
