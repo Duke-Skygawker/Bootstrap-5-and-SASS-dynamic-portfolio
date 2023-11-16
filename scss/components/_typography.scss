@@ -80,6 +80,7 @@
 }
 
 // Normalize SVG Waves
+// svg for waves doesn't fill the container properly, this is needed to eliminate the thin lines that appear above/below these items;
 svg {
   margin-bottom: -0.04rem;
   margin-top: -0.05rem;
