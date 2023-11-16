@@ -31,10 +31,11 @@
 }
 
 .btn-rounded:hover {
-  animation: btn-hover 0.3s linear 1;
+  animation: btn-hover 0.8s linear 1;
 
   color: $white;
   @include gradient;
+  @include transitionProperty;
 
   span {
     background-color: rgba($black, 0.6);
