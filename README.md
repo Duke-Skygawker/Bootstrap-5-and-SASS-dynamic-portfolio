@@ -17,3 +17,5 @@
 ### Learnings
 
 - Learned how to connect local Bootstrap scripts to the html
+- lots of SCSS practice, with nesting and such
+- got really familiar with bootstrap 5
