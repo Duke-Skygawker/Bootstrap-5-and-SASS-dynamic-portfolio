@@ -12294,4 +12294,45 @@ svg {
   }
 }
 
+@media (min-width: 576px) {
+  .footer-sm {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .footer-sm {
+    margin-top: 2rem;
+  }
+}
+.footer-sm p {
+  font-size: 0.9rem;
+}
+@media (min-width: 576px) {
+  .footer-sm p {
+    font-size: 1.1rem;
+  }
+}
+.footer-sm a {
+  color: #fff;
+}
+.footer-sm a:hover {
+  color: #9926f0;
+}
+.footer-sm a i {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 576px) {
+  .footer-sm a i {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .footer-sm a i {
+    font-size: 1.8rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

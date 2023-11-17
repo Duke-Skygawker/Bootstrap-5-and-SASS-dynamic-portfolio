@@ -44,3 +44,43 @@
     }
   }
 }
+
+// Social media content
+
+.footer-sm {
+  @include media-breakpoint-up(sm) {
+    margin-top: 1rem;
+  }
+  @include media-breakpoint-up(md) {
+    margin-top: 2rem;
+  }
+  p {
+    font-size: 0.9rem;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.1rem;
+    }
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $primary;
+    }
+
+    i {
+      font-size: 1.2rem;
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+      }
+      @include media-breakpoint-up(md) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
