@@ -11993,9 +11993,12 @@ svg {
   padding: 0 0.7rem;
 }
 .menu li a {
-  color: #fff !important;
+  color: #dee2e6 !important;
   text-transform: capitalize;
   font-weight: 600;
+}
+.menu li a:hover {
+  filter: brightness(150%);
 }
 
 .intro-section {
