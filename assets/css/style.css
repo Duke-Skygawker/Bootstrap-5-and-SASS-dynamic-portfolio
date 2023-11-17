@@ -12335,4 +12335,30 @@ svg {
   }
 }
 
+.company-info .footer-description p a {
+  text-decoration: none;
+  color: #fff;
+}
+.company-info .footer-description p a:hover {
+  color: #9926f0;
+}
+
+.copyright-container {
+  background: #000;
+  max-width: 100%;
+}
+.copyright-container .footer-copyright {
+  padding: 2.5rem 0 1.5rem 0;
+}
+.copyright-container .footer-copyright p span {
+  color: #495057;
+}
+.copyright-container .footer-copyright p a {
+  text-decoration: none;
+  color: #fff;
+}
+.copyright-container .footer-copyright p a:hover {
+  color: #9926f0;
+}
+
 /*# sourceMappingURL=style.css.map */

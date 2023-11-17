@@ -84,3 +84,40 @@
     }
   }
 }
+
+.company-info {
+  .footer-description {
+    p {
+      a {
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+.copyright-container {
+  background: $black;
+  max-width: 100%;
+  .footer-copyright {
+    padding: 2.5rem 0 1.5rem 0;
+
+    p {
+      span {
+        color: $gray-700;
+      }
+
+      a {
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
